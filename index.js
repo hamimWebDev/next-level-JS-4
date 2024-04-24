@@ -9,3 +9,14 @@ console.log(phoneCall);
 
 const phoneCall2 = greet.slice(0, 5);
 console.log(phoneCall2);
+
+// use js padding
+const id = "711";
+
+const fullId = id.padStart(6, "0");
+console.log(fullId);
+
+const id2 = 1;
+
+const fullId2 = id2.toString().padStart(7, "0");
+console.log(fullId2);
