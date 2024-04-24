@@ -20,3 +20,11 @@ const id2 = 1;
 
 const fullId2 = id2.toString().padStart(7, "0");
 console.log(fullId2);
+
+// loop
+
+let mango = 0;
+for (let i = 1; i <= 10; i++) {
+    mango += i;
+}
+console.log(mango);
