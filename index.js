@@ -73,6 +73,15 @@ const mentor = {
   },
 };
 
+const mentorKeys = Object.keys(mentor);
+
 for (const key in mentor) {
+    console.log(mentor[key]);
+}
+
+// same in for loop
+
+for (let i = 0; i < mentorKeys.length; i++) {
+  const key = mentorKeys[i];
   console.log(mentor[key]);
 }
