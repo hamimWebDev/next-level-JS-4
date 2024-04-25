@@ -54,4 +54,25 @@ for (let i = 0; i < names.length; i++) {
   //   console.log(names[i]);
 }
 
+// forin loop
+const mentor = {
+  name: "John Doe",
+  age: 35,
+  gender: "Male",
+  expertise: ["JavaScript", "Web Development", "Programming"],
+  experienceYears: 10,
+  languagesSpoken: ["English", "Spanish"],
+  contact: {
+    email: "john.doe@example.com",
+    phone: "+1234567890",
+    address: {
+      street: "123 Main St",
+      city: "Anytown",
+      country: "USA",
+    },
+  },
+};
 
+for (const key in mentor) {
+  console.log(mentor[key]);
+}
