@@ -162,4 +162,15 @@ const instructors = names3.map((value) => {
   return fLetter;
 });
 
-console.log(instructors);
+// console.log(instructors);
+
+// Use reduce
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const total = numbers.reduce((pValue, cValue) => {
+  console.log(pValue, cValue);
+  return pValue + cValue;
+}, );
+
+console.log(total);
