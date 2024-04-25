@@ -76,14 +76,14 @@ const mentor = {
 const mentorKeys = Object.keys(mentor);
 
 for (const key in mentor) {
-//   console.log(mentor[key]);
+  //   console.log(mentor[key]);
 }
 
 // same in for loop
 
 for (let i = 0; i < mentorKeys.length; i++) {
   const key = mentorKeys[i];
-//   console.log(mentor[key]);
+  //   console.log(mentor[key]);
 }
 
 // forEach loop
@@ -102,5 +102,42 @@ const names2 = [
 ];
 
 names2.forEach((value) => {
-  console.log(value);
+  //   console.log(value);
 });
+
+// find && filter
+
+const mentorList = [
+  {
+    name: "John Doe",
+    age: 35,
+    gender: "Male",
+  },
+  {
+    name: "Mohn Doe",
+    age: 25,
+    gender: "Male",
+  },
+  {
+    name: "Gohn Doe",
+    age: 45,
+    gender: "Male",
+  },
+  {
+    name: "Hohn Doe",
+    age: 25,
+    gender: "Male",
+  },
+];
+
+const mentors25 = mentorList.filter((mentor25) => {
+  if (mentor25.age === 25) {
+    return mentor25;
+  }
+});
+
+const mentors25e = mentorList.find((mentor25e) => mentor25e.age === 25);
+
+// console.log(mentors25e);
+
+// console.log(mentors25);
