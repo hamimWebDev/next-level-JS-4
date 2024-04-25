@@ -141,3 +141,25 @@ const mentors25e = mentorList.find((mentor25e) => mentor25e.age === 25);
 // console.log(mentors25e);
 
 // console.log(mentors25);
+
+// forEach & map same kentu parthoko holo forEach return korta para na ar map return korta para
+
+// Use Map
+
+const names3 = [
+  "Alice",
+  "Bob",
+  "Charlie",
+  "David",
+  "Eve",
+  "Frank",
+  "Grace",
+  "Hannah",
+];
+
+const instructors = names3.map((value) => {
+  const fLetter = value.substring(0, 1);
+  return fLetter;
+});
+
+console.log(instructors);
