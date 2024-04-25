@@ -3,28 +3,55 @@ const greet = "Hello World";
 
 const phoneCall = greet.substring(0, 5);
 
-console.log(phoneCall);
+// console.log(phoneCall);
 
 // use slice
 
 const phoneCall2 = greet.slice(0, 5);
-console.log(phoneCall2);
+// console.log(phoneCall2);
 
 // use js padding
 const id = "711";
 
 const fullId = id.padStart(6, "0");
-console.log(fullId);
+// console.log(fullId);
 
 const id2 = 1;
 
 const fullId2 = id2.toString().padStart(7, "0");
-console.log(fullId2);
+// console.log(fullId2);
 
 // loop
 
 let mango = 0;
 for (let i = 1; i <= 10; i++) {
-    mango += i;
+  mango += i;
 }
-console.log(mango);
+// console.log(mango);
+
+// for of loop
+
+const names = [
+  "Alice",
+  "Bob",
+  "Charlie",
+  "David",
+  "Eve",
+  "Frank",
+  "Grace",
+  "Hannah",
+  "Jannah",
+  "Mannah",
+];
+
+for (const name of names) {
+  //   console.log(name);
+}
+
+// same in for loop
+
+for (let i = 0; i < names.length; i++) {
+  //   console.log(names[i]);
+}
+
+
